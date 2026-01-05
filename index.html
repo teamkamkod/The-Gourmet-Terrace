@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Gourmet Terrace - Authentic Thai Cuisine & Fresh Seafood in Bo Put, Koh Samui.">
+    <title>The Gourmet Terrace | Koh Samui</title>
+    
+    <!-- Google Fonts: Playfair Display (Headers) & Prompt (Body/Thai) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+        <div class="brand-name">The Gourmet Terrace</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">The Gourmet<span class="highlight">Terrace</span></a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home" data-key="nav_home">Home</a></li>
+                <li><a href="#about" data-key="nav_about">About</a></li>
+                <li><a href="#menu" data-key="nav_menu">Menu</a></li>
+                <li><a href="#reservation" data-key="nav_reserve">Book a Table</a></li>
+                <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+                <li class="lang-switch-item">
+                    <button id="lang-toggle" class="lang-btn">
+                        <img src="https://flagcdn.com/w20/th.png" alt="TH" id="lang-flag"> 
+                        <span id="lang-text">TH</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="fade-up" data-key="hero_title">The Gourmet Terrace</h1>
+            <p class="tagline fade-up delay-1" data-key="hero_tagline">Elevate Your Senses on Our Sunset Terrace in Bo Put</p>
+            <div class="hero-btns fade-up delay-2">
+                <a href="#reservation" class="btn btn-primary" data-key="btn_book">Book Now</a>
+                <a href="#menu" class="btn btn-outline" data-key="btn_menu">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-grid">
+            <div class="about-images fade-left">
+                <!-- Using GMB images provided -->
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSytbK82gZTTcpNV45XhCWp6IkCkUB_JvODNtWVaNRCG46xoVNi6t-ieAiIJJsbVNihkykeX-9UI3oxcCPCyfFCPCToyF5PtuOIgCR6atJyxfI1omx4sXWq5ajuXRSj1rESp6akleA" alt="Restaurant Interior" class="img-1">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyOoEdsM4wBtPN7ulaxMP5oXyzB3rSmsabzA61lA6QWiSzoSVesK361vG22-LeghIXKbWDjfVHccGVXEJY4I_S9T-pVTCyP4SOBH4UxX3RlfkHErqRfwzfNPR0DQ6gPy-s6ZZli" alt="Delicious Food" class="img-2">
+            </div>
+            <div class="about-text fade-right">
+                <h4 class="sub-heading" data-key="about_sub">Our Story</h4>
+                <h2 class="section-heading" data-key="about_heading">Authentic Flavors, Ocean Breeze</h2>
+                <p class="intro-text" data-key="about_intro">Discover authentic Thai flavors and fresh seafood amid breathtaking Koh Samui views.</p>
+                <p class="body-text" data-key="about_body">
+                    Nestled in Bo Put, Koh Samui, The Gourmet Terrace blends authentic Thai mastery with Western delights, crafted from daily fresh fish market seafood. Savor zesty green curry, succulent steaks, and flavorful pad thai in our warm, family-style haven. Join us for sunset dinners where ocean breezes, attentive service, and genuine hospitality create unforgettable moments.
+                </p>
+                <div class="features">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-fish"></i>
+                        <span data-key="feat_seafood">Fresh Seafood</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span data-key="feat_veg">Vegetarian Options</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-wine-glass"></i>
+                        <span data-key="feat_cocktail">Sunset Cocktails</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h4 class="sub-heading" data-key="menu_sub">Discover</h4>
+                <h2 class="section-heading" data-key="menu_heading">Our Menu Favorites</h2>
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="thai">Thai Classics</button>
+                <button class="tab-btn" data-category="seafood">Seafood & Western</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-container">
+                <!-- Thai Menu -->
+                <div class="menu-category active" id="thai">
+                    <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Pad Thai (Prawns/Veg)</h4>
+                                <span class="price">~80฿</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_padthai">Classic stir-fried rice noodles with tamarind sauce, egg, tofu, and peanuts.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Green Curry</h4>
+                                <span class="price">~150฿</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_curry">Zesty and spicy coconut milk curry with Thai basil and fresh vegetables.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Laab Gai</h4>
+                                <span class="price">~120฿</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_laab">Spicy minced chicken salad with mint, lime, and roasted rice powder.</p>
+                        </div>
+                    </div>
+                     <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Spring Rolls</h4>
+                                <span class="price">~100฿</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_springrolls">Crispy homemade rolls served with sweet chili sauce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seafood/Western -->
+                <div class="menu-category" id="seafood">
+                    <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Fresh Prawns</h4>
+                                <span class="price">Market Price</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_prawns">Daily fresh prawns grilled to perfection with seafood sauce.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Succulent Steak</h4>
+                                <span class="price">~450฿</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_steak">Tender beef steak served with sides and pepper sauce.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Fried Chicken w/ Basil</h4>
+                                <span class="price">~150฿</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_basil">Crispy chicken stir-fried with holy basil and chili.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Drinks -->
+                 <div class="menu-category" id="drinks">
+                    <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Sunset Cocktails</h4>
+                                <span class="price">~180฿</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_cocktail">Refreshing tropical blends perfect for the evening view.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Fruit Shakes</h4>
+                                <span class="price">~80฿</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_shake">Mango, Watermelon, or Pineapple blended with ice.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h4>Beer (Singha/Chang)</h4>
+                                <span class="price">~90฿</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_beer">Ice cold local beers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="section reservation-section">
+        <div class="container">
+            <div class="reservation-box fade-up">
+                <div class="form-header">
+                    <h4 class="sub-heading" data-key="res_sub">Book a Table</h4>
+                    <h2 class="section-heading" data-key="res_heading">Reservation</h2>
+                    <p data-key="res_desc">Reserve your spot for a perfect sunset dinner.</p>
+                </div>
+                
+                <form id="booking-form">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="date" id="date" name="date" required>
+                        <select id="time" name="time" required>
+                            <option value="" disabled selected data-key="form_time">Select Time</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">01:00 PM</option>
+                            <option value="17:00">05:00 PM</option>
+                            <option value="18:00">06:00 PM</option>
+                            <option value="19:00">07:00 PM</option>
+                            <option value="20:00">08:00 PM</option>
+                            <option value="21:00">09:00 PM</option>
+                        </select>
+                        <input type="number" id="pax" name="pax" placeholder="Pax" min="1" max="20" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" data-key="btn_submit">Confirm Booking</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section bg-dark">
+        <div class="container text-center">
+            <h4 class="sub-heading" data-key="rev_sub">Testimonials</h4>
+            <h2 class="section-heading" data-key="rev_heading">What Our Guests Say</h2>
+            
+            <div class="reviews-slider">
+                <!-- Review 1 -->
+                <div class="review-card active">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Great food for not much money! It really was my favourite restaurant when i was in Koh Samui. The owner and the staff were lovely. Try the thai food as we are in thailand!"</p>
+                    <p class="review-author">- Cristian Fabbro</p>
+                </div>
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Outstanding meals. It was empty when we walked in and the place started to gradually fill up as we enjoyed our meals. Good service."</p>
+                    <p class="review-author">- Sean Rasmussen</p>
+                </div>
+                 <!-- Review 3 -->
+                 <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Best vegetarian Pad Thai Ive had in Thailand so far! Wonderful hosts, fab service, would really reccomend!"</p>
+                    <p class="review-author">- Georgia Wren</p>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="showReview(0)"></span>
+                <span class="dot" onclick="showReview(1)"></span>
+                <span class="dot" onclick="showReview(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2 class="section-heading" data-key="contact_heading">Contact Us</h2>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h5 data-key="contact_addr">Address</h5>
+                        <p>155, Chaweng Beach, 58 Moo2, Bo Put, Ko Samui District, Surat Thani 84320</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h5 data-key="contact_phone">Phone</h5>
+                        <p>+66 98 886 1428</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-regular fa-clock"></i>
+                    <div>
+                        <h5 data-key="contact_hours">Opening Hours</h5>
+                        <p>Mon - Sun: 10:00 AM - 10:30 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrapper">
+                <iframe src="https://maps.google.com/maps?q=9.5223468,100.0576119&z=15&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 The Gourmet Terrace. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
